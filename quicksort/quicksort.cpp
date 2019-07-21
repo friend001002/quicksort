@@ -3,6 +3,28 @@
 
 using namespace std;
 
+class Quick_sort_ex : public runtime_error
+{
+  public:
+
+  explicit Quick_sort_ex(const char *msg) : runtime_error(msg)
+  {
+  }
+
+  explicit Quick_sort_ex(string& msg) : runtime_error(msg)
+  {
+  }
+
+  virtual ~Quick_sort_ex() noexcept
+  {
+  }
+
+  virtual const char* what() const noexcept
+  {
+    return runtime_error::what();
+  }
+};
+
 template<class T>
 class Quick_sort
 {
@@ -16,6 +38,8 @@ class Quick_sort
 
   virtual ~Quick_sort()
   {
+    cout << "~Quick_sort\n";
+
     data_.clear();
     data_.shrink_to_fit();
   }
@@ -34,6 +58,22 @@ class Quick_sort
     out = data_;
 
     return true;
+  }
+
+  vector<T> Sort() noexcept(false)
+  {
+    if (0 == data_.size())
+    {
+      cerr << "No data to sort!\n";
+
+      throw Quick_sort_ex("No data to sort!");
+    }
+
+    this->Do_sort(0, data_.size() - 1);
+
+    //out = data_;
+
+    return data_;
   }
 
   private:
@@ -81,28 +121,80 @@ class Quick_sort
 
 int main()
 {
-  vector<int> v { 10, 80, 30, 90, 40, 50, 70 };
-  //vector<int> v { 10, 7, 8, 9, 1, 5 };
+  cout << "Error codes:\n";
 
-  Quick_sort<int> qs(v);
-
-  vector<int> res;
-
-  bool succ = qs.Sort(res);
-
-  if (succ)
+  do
   {
-    for (int i : res)
+    vector<int> v { 10, 80, 30, 90, 40, 50, 70 };
+
+    Quick_sort<int> qs(v);
+
+    vector<int> res;
+
+    cout << "Orig:   ";
+
+    for (int i : v)
     {
       cout << i << ' ';
     }
 
     cout << endl;
+
+    cout << "Sorted: ";
+
+    bool succ = qs.Sort(res);
+
+    if (succ)
+    {
+      for (int i : res)
+      {
+        cout << i << ' ';
+      }
+
+      cout << endl;
+    }
+    else
+    {
+      cerr << "Error\n";
+    }
   }
-  else
+  while (false);
+
+  cout << "Exceptions:\n";
+
+  do
   {
-    cerr << "Error\n";
-  }
+    vector<int> v { 10, 7, 8, 9, 1, 5 };
+
+    Quick_sort<int> qs(v);
+
+    cout << "Orig:   ";
+
+    for (int i : v)
+    {
+      cout << i << ' ';
+    }
+
+    cout << endl;
+
+    cout << "Sorted: ";
+
+    try
+    {
+      vector<int> res = qs.Sort();
+
+      for (int i : res)
+      {
+        cout << i << ' ';
+      }
+
+      cout << endl;
+    }
+    catch (Quick_sort_ex& ex)
+    {
+      cerr << "Exception: " << ex.what() << endl;
+    }
+  } while (false);
 
   cin.get();
 

@@ -185,13 +185,13 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(161): warning C4820: 'std::basic_ostream<char,std::char_traits<char>>::sentry': '3' bytes padding added after data member 'std::basic_ostream<char,std::char_traits<char>>::sentry::_Ok'
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(298): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>::sentry' being compiled
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(296): note: while compiling class template member function 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(97): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(138): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)' being compiled
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(687): note: see reference to class template instantiation 'std::basic_ostream<char,std::char_traits<char>>' being compiled
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(313): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(129): warning C4820: 'std::basic_istream<char,std::char_traits<char>>::sentry': '3' bytes padding added after data member 'std::basic_istream<char,std::char_traits<char>>::sentry::_Ok'
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(378): note: see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>::sentry' being compiled
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(374): note: while compiling class template member function 'int std::basic_istream<char,std::char_traits<char>>::get(void)'
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(107): note: see reference to function template instantiation 'int std::basic_istream<char,std::char_traits<char>>::get(void)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(199): note: see reference to function template instantiation 'int std::basic_istream<char,std::char_traits<char>>::get(void)' being compiled
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(773): note: see reference to class template instantiation 'std::basic_istream<char,std::char_traits<char>>' being compiled
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(394): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(739): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
@@ -200,25 +200,25 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
           [
               _Ty=int
           ]
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(12): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(76): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>>::vector(const std::vector<_Ty,std::allocator<_Ty>> &)' being compiled
           with
           [
               _Ty=int
           ]
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(84): note: see reference to class template instantiation 'std::vector<int,std::allocator<_Ty>>' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(128): note: see reference to class template instantiation 'std::vector<int,std::allocator<_Ty>>' being compiled
           with
           [
               _Ty=int
           ]
-d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(72): warning C4244: 'argument': conversion from 'int64_t' to 'size_t', possible loss of data
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(62): note: while compiling class template member function 'size_t Quick_sort<int>::Partition(size_t,size_t)'
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(47): note: see reference to function template instantiation 'size_t Quick_sort<int>::Partition(size_t,size_t)' being compiled
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(87): note: see reference to class template instantiation 'Quick_sort<int>' being compiled
-d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(72): warning C4365: 'argument': conversion from 'int64_t' to 'size_t', signed/unsigned mismatch
-d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(76): warning C4244: 'argument': conversion from 'int64_t' to 'size_t', possible loss of data
-d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(76): warning C4365: 'argument': conversion from 'int64_t' to 'size_t', signed/unsigned mismatch
-d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(78): warning C4244: 'return': conversion from 'int64_t' to 'size_t', possible loss of data
-d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(78): warning C4365: 'return': conversion from 'int64_t' to 'size_t', signed/unsigned mismatch
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(112): warning C4244: 'argument': conversion from 'int64_t' to 'size_t', possible loss of data
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(102): note: while compiling class template member function 'size_t Quick_sort<int>::Partition(size_t,size_t)'
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(87): note: see reference to function template instantiation 'size_t Quick_sort<int>::Partition(size_t,size_t)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(130): note: see reference to class template instantiation 'Quick_sort<int>' being compiled
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(112): warning C4365: 'argument': conversion from 'int64_t' to 'size_t', signed/unsigned mismatch
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(116): warning C4244: 'argument': conversion from 'int64_t' to 'size_t', possible loss of data
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(116): warning C4365: 'argument': conversion from 'int64_t' to 'size_t', signed/unsigned mismatch
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(118): warning C4244: 'return': conversion from 'int64_t' to 'size_t', possible loss of data
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(118): warning C4365: 'return': conversion from 'int64_t' to 'size_t', signed/unsigned mismatch
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1504): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(1497): note: while compiling class template member function 'void std::vector<int,std::allocator<_Ty>>::_Reallocate_exactly(const unsigned int)'
           with
@@ -237,9 +237,9 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(132): note: while compiling class template member function 'bool std::basic_istream<char,std::char_traits<char>>::_Ipfx(bool)'
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\istream(116): note: see reference to function template instantiation 'bool std::basic_istream<char,std::char_traits<char>>::_Ipfx(bool)' being compiled
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(864): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(97): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(138): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)' being compiled
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ostream(826): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(104): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(124): note: see reference to function template instantiation 'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)' being compiled
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(709): warning C4571: Informational: catch(...) semantics changed since Visual C++ 7.1; structured exceptions (SEH) are no longer caught
   c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\vector(729): note: see reference to function template instantiation 'void std::vector<int,std::allocator<_Ty>>::_Range_construct_or_tidy<const _Elem*>(_Iter,_Iter,std::forward_iterator_tag)' being compiled
           with
@@ -261,7 +261,7 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
               _Ty=int,
               _Alloc=std::allocator<int>
           ]
-  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(84): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>>::vector(std::initializer_list<_Ty>,const _Alloc &)' being compiled
+  d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(128): note: see reference to function template instantiation 'std::vector<int,std::allocator<_Ty>>::vector(std::initializer_list<_Ty>,const _Alloc &)' being compiled
           with
           [
               _Ty=int,
@@ -1008,4 +1008,5 @@ c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.1
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios(332): warning C4514: 'std::skipws': unreferenced inline function has been removed
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios(338): warning C4514: 'std::unitbuf': unreferenced inline function has been removed
 c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\ios(344): warning C4514: 'std::uppercase': unreferenced inline function has been removed
+d:\visual_studio_projects\c++\study\quicksort\quicksort\quicksort.cpp(14): warning C4514: 'Quick_sort_ex::Quick_sort_ex': unreferenced inline function has been removed
   quicksort.vcxproj -> D:\Visual_Studio_Projects\C++\Study\quicksort\Debug\quicksort.exe
